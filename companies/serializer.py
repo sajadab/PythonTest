@@ -7,5 +7,3 @@ class StockSerializer(serializers.ModelSerializer):
         model = Stock
         fields = '__all__'
 
-
-    class StockCreate()
