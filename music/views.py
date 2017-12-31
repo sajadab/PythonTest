@@ -1,6 +1,6 @@
 from django.views import generic
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
-from django.core.urlresolvers import reverse_lazy
+# from django.core.urlresolvers import reverse_lazy
 from .models import Album
 
 
@@ -33,7 +33,7 @@ class AlbumUpdate(UpdateView):
 
 class AlbumDelete(DeleteView):
     model = Album
-    success_url = reverse_lazy("music:index")
+    # success_url = reverse_lazy("music:index")
 
 # from django.http import Http404
 # from django.shortcuts import render, get_object_or_404
